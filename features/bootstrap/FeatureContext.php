@@ -23,6 +23,7 @@ class FeatureContext implements Context, CustomSnippetAcceptingContext
     }
 
     private $list=[];
+    private $find;
 
     public static function getAcceptedSnippetType()
     {
