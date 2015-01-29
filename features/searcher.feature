@@ -12,3 +12,8 @@ Feature: Search a number in an ordered list of Numbers
         Given I have the list "1"
         When I search the number "1"
         Then I should find it
+
+    Scenario:  Search a number not in a list with one element
+        Given I have the list "2"
+        When I search the number "1"
+        Then I should not find it
