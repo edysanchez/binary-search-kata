@@ -52,7 +52,7 @@ class FeatureContext implements Context, CustomSnippetAcceptingContext
     public function find()
     {
         if (!$this->find) {
-            throw new Exception('not found');
+            throw new Exception('value found');
         }
     }
 
@@ -62,7 +62,7 @@ class FeatureContext implements Context, CustomSnippetAcceptingContext
     public function notFind()
     {
         if ($this->find) {
-            throw new Exception('not found');
+            throw new Exception('value not found');
         }
     }
 
