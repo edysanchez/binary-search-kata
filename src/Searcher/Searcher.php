@@ -15,7 +15,7 @@ class Searcher
         if ($array[$mid]>$value) {
             return $array[$min] === $value;
         } else {
-            return $array[$max];
+            return $array[$max] === $value;
         }
     }
 }

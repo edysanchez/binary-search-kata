@@ -32,3 +32,8 @@ Feature: Search a number in an ordered list of Numbers
         Given I have the list "1,2,3"
         When I search the number "3"
         Then I should find it
+
+    Scenario: Search the a number not in a list with 3 elements
+        Given I have the list "1,2,3"
+        When I search the number "0"
+        Then I should not find it
